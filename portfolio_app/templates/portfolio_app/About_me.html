@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'portfolio_app/base.html' %}
+    {% block content %}
+    <div class="container  mt-3">
+        <div class="row">
+            <div class="col mt-5">
+                <h2> Hi <span> <img src="{% static '/images/icons8-hand-black.png'%}"></span> I'm Muhammad Yekini </h2>
+                <p>Python Developer </p>
+                <p>Experienced Freelance Web Developer with a demonstrated history of working in the internet industry. Skilled in Cascading Style Sheets (CSS), AngularJS, HTML5, Python (Programming Language), and jQuery. Strong engineering professional with a Bachelor of Technology
+                    - BTech focused in Mathematics and Computer Science from the Federal University of Technology Minna.</p>
+
+                <div class="row">
+                    <div class="col">
+                       <a class="btn btn-outline-dark"><img src="{% static '/images/icons8-email-64 -black.png'%}" alt="image icon"></a> 
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col mt-5  justify-content-end">
+                <img src="{% static 'images/display picture.jpg'%}" alt="my picture" class=" img-responsive rounded-circle img-fluid" width="300" height="300" id="about_me">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    {% endblock content %}
+</body>
+</html>
