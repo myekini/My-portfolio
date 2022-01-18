@@ -12,6 +12,4 @@ urlpatterns = [
     path('Blog/', views.Blog, name='Blog'),
     path('contact/', views.contact, name='contact'),
     
-
-
 ]

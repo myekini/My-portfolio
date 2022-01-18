@@ -1,4 +1,9 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+from django.urls import reverse
+from django.http import HttpResponseRedirect
+from. models import Name, Email, Message
+from . forms import ContactForm
 
 # Create your views here.
 
@@ -21,7 +26,19 @@ def Blog(request):
 
 def contact(request):
     """ contact me page """
-    return render(request, 'portfolio_app/contact.html')
+    if request.method == 'POST':
+        name_contact = request.POST['name-contact']
+        email_contact = request.POST['email-contact']
+        message_contact = request.POST['message']
+        
+        # send email to me
+        recipients = ['muhammadnurudeen@rocketmail.com']
+        send_mail(name_contact, message_contact, email_contact, recipients)
+        return render(request, 'portfolio_app/contact.html', {'name_contact': name_contact})    
+    else:
+        return render(request, 'portfolio_app/contact.html')
+
+
 
 def portfolio(request):
     """ display full portfolio """
