@@ -77,8 +77,8 @@
                     <h1 class="display-4"> Muhammad Yekini </h1>
                     <p> Experienced Freelance Web Developer with a demonstrated history of working in the internet industry. Skilled in Cascading Style Sheets (CSS), AngularJS, HTML5, Python (Programming Language), and jQuery. Strong engineering professional with a Bachelor of Technology
                     - BTech focused in Mathematics and Computer Science from the Federal University of Technology Minna.</p>
-                    <button type="button" class="btn btn-success rounded-pill"> Resume <span><img src="{% static '/images/outline_cloud_upload_black_24dp.png'%}" class="p-1"/></span> </button>
-                    <button type="button" class="btn btn-primary rounded-pill"> Contact </button>
+                    <a href="{% static '/images/Resume.pdf'%}" class="btn btn-success rounded-pill" download><img src="{% static '/images/outline_cloud_upload_black_24dp.png'%}" class="p-1"> Resume</a>
+                    <a href="{% url 'portfolio_app:contact'%}" class="btn btn-primary rounded-pill"> Contact </a>
                 </div>
 
             </div>
