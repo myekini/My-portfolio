@@ -37,6 +37,43 @@ p {
     left: 150px; 
 }
 
+/* section styling */
+.wrapper-1 {
+    background-color:gray;
+    border-bottom: solid 2px black;
+    overflow: auto;
+}
+
+
+.wrapper-2 {
+    background-color: whitesmoke;
+    border-bottom: solid 2px black;
+    overflow: auto;
+}
+
+.wrapper-3 {
+    background-color:gray;
+    border-bottom: solid 2px black;
+    overflow: auto;
+}
+
+.wrapper-4 {
+    background-color:gray;
+    border-bottom: solid 2px black;
+    overflow: auto;
+}
+
+.wrapper-5 {
+    background-color:whitesmoke;
+    border-bottom: solid 2px black;
+    overflow: auto;
+}
+
+.wrapper-6 {
+    background-color:whitesmoke;
+    overflow: auto;
+}
+
 
 
 /* Extra small devices (portrait phones, less than 576px) */
