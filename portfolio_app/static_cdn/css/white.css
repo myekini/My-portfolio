@@ -3,15 +3,17 @@
     --PrimaryText: #FFFFFF;
     --secondaryText: #000000;
 
-    --primaryColor: #808080;
-    --secondaryColor : #F5F5F5;
+    --primaryColor: #FFFFFF;
+    --secondaryColor : #FFFFFF;
     --tetiaryColor : #000000;
 
 }
 
 
+
+
 body {
-    background-color: azure;
+    background-color: var(--secondaryColor);
     font-family:'Playfair Display', serif;
 }
 

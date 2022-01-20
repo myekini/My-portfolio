@@ -3,25 +3,32 @@
     --PrimaryText: #FFFFFF;
     --secondaryText: #000000;
 
-    --primaryColor: #808080;
-    --secondaryColor : #F5F5F5;
+    --primaryColor: #000000;
+    --secondaryColor : #000000;
     --tetiaryColor : #000000;
 
 }
 
 
 body {
-    background-color: azure;
+    background-color: var(--tetiaryColor);
     font-family:'Playfair Display', serif;
 }
+
 
 h1,h2,h5,h6,span {
     font-family: 'Bitter', serif;
     font-weight: bold;
+    color:var(--PrimaryText);
 }
 
 p {
     font-family:'Merriweather', serif;
+    color:var(--PrimaryText);
+}
+
+.navbar {
+    background:var(--tetiaryColor)
 }
 
 #About_me {

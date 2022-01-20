@@ -4,14 +4,14 @@
     --secondaryText: #000000;
 
     --primaryColor: #808080;
-    --secondaryColor : #F5F5F5;
+    --secondaryColor : #808080;
     --tetiaryColor : #000000;
 
 }
 
 
 body {
-    background-color: azure;
+    background-color: var(--primaryColor);
     font-family:'Playfair Display', serif;
 }
 
@@ -24,6 +24,17 @@ p {
     font-family:'Merriweather', serif;
 }
 
+.navbar {
+    background:var(--PrimaryText);
+    
+}
+.nav-con {
+    overflow:auto;
+}
+
+.nav-link {
+    color:var(--PrimaryText)
+}
 #About_me {
     border: solid 2px var(--PrimaryText);
 

@@ -1,13 +1,18 @@
-/*body {
-    background-image:url(../images/background-9.jpg);
-}*/
+/* css variables for colors */
+:root {
+    --PrimaryText: #FFFFFF;
+    --secondaryText: #000000;
 
-/*font-family: 'Bitter', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Playfair Display', serif; */
+    --primaryColor: #808080;
+    --secondaryColor : #F5F5F5;
+    --tetiaryColor : #000000;
+
+}
+
 
 body {
     background-color: azure;
+    font-family:'Playfair Display', serif;
 }
 
 h1,h2,h5,h6,span {
@@ -17,6 +22,11 @@ h1,h2,h5,h6,span {
 
 p {
     font-family:'Merriweather', serif;
+}
+
+#About_me {
+    border: solid 2px var(--PrimaryText);
+
 }
 
 .logo_name {
@@ -29,6 +39,85 @@ p {
     position: relative;
     right:0;
     left: 150px; 
+}
+
+/* section styling */
+.wrapper-1 {
+    background-color: var(--primaryColor);
+    border-bottom: solid 2px var(--tetiaryColor);
+    overflow: auto;
+}
+
+
+.wrapper-2 {
+    background-color: var(--secondaryColor);
+    border-bottom: solid 2px var(--tetiaryColor);
+    overflow: auto;
+}
+
+.wrapper-3 {
+    background-color: var(--primaryColor);
+    border-bottom: solid 2px var(--tetiaryColor);
+    overflow: auto;
+}
+
+.wrapper-4 {
+    background-color: var(--primaryColor);
+    border-bottom: solid 2px var(--tetiaryColor);
+    overflow: auto;
+}
+
+.wrapper-5 {
+    background-color: var(--secondaryColor);
+    border-bottom: solid 2px var(--tetiaryColor);
+    overflow: auto;
+}
+
+.wrapper-6 {
+    background-color: var(--secondaryColor);
+    overflow: auto;
+}
+
+/* dot section */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: auto;
+    right: 110px;
+    top: 10px;
+    bottom: auto;
+
+}
+
+.dot {
+    height:30px;
+    width: 30px;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    cursor: pointer; 
+    margin: 5px;
+    border : 2px solid black;
+    
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  
+}
+
+.dot:hover {
+    border-width: 5px;
+}
+
+#light-theme {
+    background-color:var(--PrimaryText)
+}
+#grey-theme {
+    background-color:var(--primaryColor)
+}
+#dark-theme {
+    background-color:var(--tetiaryColor)
 }
 
 
