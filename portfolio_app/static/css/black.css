@@ -27,8 +27,12 @@ p {
     color:var(--PrimaryText);
 }
 
-.navbar {
+.nav-bg {
     background: var(--tetiaryColor);
+}
+
+.nav-text {
+    color: var(--tetiaryColor)
 }
 
 

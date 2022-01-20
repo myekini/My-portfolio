@@ -24,17 +24,15 @@ p {
     font-family:'Merriweather', serif;
 }
 
-.navbar {
-    background:var(--PrimaryText);
-    
-}
-.nav-con {
-    overflow:auto;
+.nav-bg {
+    background: var(--primaryColor);
 }
 
-.nav-link {
-    color:var(--PrimaryText)
+.nav-text {
+    color: var(--tetiaryColor)
 }
+
+
 #About_me {
     border: solid 2px var(--PrimaryText);
 

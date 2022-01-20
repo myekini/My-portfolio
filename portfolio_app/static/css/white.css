@@ -25,10 +25,10 @@ h1,h2,h5,h6,span {
 p {
     font-family:'Merriweather', serif;
 }
-.navbar {
-    background: var(--secondaryColor);
-}
 
+.nav-text {
+    color: var(--tetiaryColor)
+}
 #About_me {
     border: solid 2px var(--PrimaryText);
 
