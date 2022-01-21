@@ -11,7 +11,7 @@
 
 
 body {
-    background-color: var(--tetiaryColor);
+    background-color: var(--secondaryColor);
     font-family:'Playfair Display', serif;
 }
 
@@ -26,6 +26,19 @@ h1,h2,h5,h6,span {
 p {
     font-family:'Merriweather', serif;
 }
+
+
+/* navigation theme */
+.navbar-light {
+    background: white;
+}
+
+/* section themes */
+.card {
+    color: var(--tetiaryColor);    
+}
+
+
 
 #About_me {
     border: solid 2px var(--PrimaryText);

@@ -49,6 +49,11 @@ p {
     background: var(--primaryColor)
 }
 
+.icon-1 {
+    background:var(--primaryColor)
+}
+
+
 
 #About_me {
     border: solid 2px var(--PrimaryText);

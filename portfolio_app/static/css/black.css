@@ -47,8 +47,13 @@ p {
     background: var(--PrimaryText);
 }
 
+.git-logo {
+    background: white;
+}
 
-
+.icon-1 {
+    background:var(--PrimaryText)
+}
 
 
 #About_me {
