@@ -1,10 +1,21 @@
-var element  = document.getElementById('light-theme')
-element.addEventListener("click", function(){
-    alert('hello world'); 
-});
 
-
-function ChangeTheme() {
-    var x  = document.getElementById('style-link')
-    x.href = "{% static '/css/black.css'%}"  
+let element = document.getElementsByClassName('dot')
+for(var i=0; element.length > i; i++) {
+    element[i].addEventListener('click', function() {
+        let mode = this.dataset.mode
+        console.log('optioned clicked', mode)
+        ChangeTheme(mode)
+    })
 }
+
+function ChangeTheme(mode) {
+    if(mode == 'light') {
+        document.getElementById('style-link').href = 'static/css/white.css';
+    } else if (mode == 'grey'){
+        document.getElementById('style-link').href = 'static/css/grey.css';
+    }
+    if (mode == 'dark'){
+        document.getElementById('style-link').href = 'static/css/black.css';
+    }
+}
+
