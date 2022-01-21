@@ -2,14 +2,13 @@
 :root {
     --PrimaryText: #FFFFFF;
     --secondaryText: #000000;
+    --tetiaryText : #A9A9A9;
 
     --primaryColor: #FFFFFF;
     --secondaryColor : #FFFFFF;
     --tetiaryColor : #000000;
 
 }
-
-
 
 
 body {
@@ -26,9 +25,20 @@ p {
     font-family:'Merriweather', serif;
 }
 
-.nav-text {
-    color: var(--tetiaryColor)
+
+/* navigation theme */
+
+/* section themes */
+.card {
+    color: var(--tetiaryColor);    
 }
+.card-footer {
+    color: var(--secondaryText)
+}
+
+
+
+
 #About_me {
     border: solid 2px var(--PrimaryText);
 
@@ -119,7 +129,7 @@ p {
     background-color:var(--PrimaryText)
 }
 #grey-theme {
-    background-color:var(--primaryColor)
+    background-color: var(--tetiaryText);
 }
 #dark-theme {
     background-color:var(--tetiaryColor)

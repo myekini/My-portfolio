@@ -2,6 +2,7 @@
 :root {
     --PrimaryText: #FFFFFF;
     --secondaryText: #000000;
+    --tetiaryText : #808080;
 
     --primaryColor: #000000;
     --secondaryColor : #000000;
@@ -16,7 +17,7 @@ body {
 }
 
 
-h1,h2,h5,h6,span {
+h1,h2,h4,h5,h6,span {
     font-family: 'Bitter', serif;
     font-weight: bold;
     color:var(--PrimaryText);
@@ -27,9 +28,28 @@ p {
     color:var(--PrimaryText);
 }
 
-.navbar {
-    background:var(--tetiaryColor)
+
+/* navigation theme */
+.navbar-light {
+    background: var(--tetiaryColor);
 }
+
+/* section themes */
+.card {
+    background: var(--tetiaryColor);
+    color: var(--PrimaryText);
+    border: 1px solid var(--PrimaryText)
+}
+.card-footer {
+    color: var(--PrimaryText)
+}
+.card-link {
+    background: var(--PrimaryText);
+}
+
+
+
+
 
 #About_me {
     border: solid 2px var(--PrimaryText);
@@ -53,6 +73,7 @@ p {
     background-color: var(--primaryColor);
     border-bottom: solid 2px var(--tetiaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 
@@ -60,29 +81,34 @@ p {
     background-color: var(--secondaryColor);
     border-bottom: solid 2px var(--tetiaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 .wrapper-3 {
     background-color: var(--primaryColor);
     border-bottom: solid 2px var(--tetiaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 .wrapper-4 {
     background-color: var(--primaryColor);
     border-bottom: solid 2px var(--tetiaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 .wrapper-5 {
     background-color: var(--secondaryColor);
     border-bottom: solid 2px var(--tetiaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 .wrapper-6 {
     background-color: var(--secondaryColor);
     overflow: auto;
+    border-bottom: 1px solid var(--PrimaryText);
 }
 
 /* dot section */
@@ -121,7 +147,7 @@ p {
     background-color:var(--PrimaryText)
 }
 #grey-theme {
-    background-color:var(--primaryColor)
+    background-color: var(--tetiaryText);
 }
 #dark-theme {
     background-color:var(--tetiaryColor)

@@ -24,6 +24,22 @@ p {
     font-family:'Merriweather', serif;
 }
 
+
+/* section themes */
+.card {
+    background: var(--tetiaryColor);
+    color: var(--PrimaryText);
+    border: 1px solid var(--PrimaryText)
+}
+.card-footer {
+    color: var(--PrimaryText)
+}
+.card-link {
+    background: var(--PrimaryText);
+}
+
+
+
 #About_me {
     border: solid 2px var(--PrimaryText);
 

@@ -24,12 +24,29 @@ p {
     font-family:'Merriweather', serif;
 }
 
-.nav-bg {
+
+/* section themes */
+.card {
+    background: var(--secondaryColor);
+    color: var(--tetiaryColor);
+    border: 1px solid var(--tetiaryColor)
+}
+.card-footer {
+    color: var(--PrimaryText)
+}
+.card-link {
     background: var(--primaryColor);
+    
+}
+.list-group-item {
+    background:var(--primaryColor)
+}
+.card-footer {
+    color: var(--tetiaryColor)
 }
 
-.nav-text {
-    color: var(--tetiaryColor)
+.button-1 {
+    background: var(--primaryColor)
 }
 
 

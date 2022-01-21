@@ -1,16 +1,10 @@
-var x  = document.querySelector('dot')
-x.addEventListener("mouseover", function(){
-    ChangeTheme(); 
+var element  = document.getElementById('light-theme')
+element.addEventListener("click", function(){
+    alert('hello world'); 
 });
-
-var x  = document.getElementById('light-theme')
-x.addEventListener("mouseout", function(){
-    var y = document.body.style.backgroundColor = 'yellow'; 
-});
-
 
 
 function ChangeTheme() {
-    var x  = document.body
-    x.style.backgroundColor = "red"    
+    var x  = document.getElementById('style-link')
+    x.href = "{% static '/css/black.css'%}"  
 }
