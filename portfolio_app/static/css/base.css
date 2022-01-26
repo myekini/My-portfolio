@@ -19,6 +19,15 @@ body * {
     transition:1s;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background-color:#ffffff;
+  }
+
 html {
     background-color: var(--tetiaryColor)
 }
@@ -107,9 +116,9 @@ p {
     overflow: auto;
 }
 
-/* dot section */
+/* dot section 
 
-.wrapper {
+.dot-circle {
     display: flex;
     justify-content: center;
     position:relative;
@@ -118,7 +127,7 @@ p {
     top: 15px;
     bottom: auto;
 
-}
+} */
 
 .dot {
     height:30px;
@@ -158,6 +167,15 @@ p {
         right: 100px;;
         left: 0px; 
     }
+    .dot-circle {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        left:auto;
+        right:81px;
+        top: 15px;
+        bottom: auto;
+    }
     
 
 }
@@ -168,6 +186,16 @@ p {
         right: 100px;
         left: 0px; 
     }
+    .dot-circle {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        left:auto;
+        right:180px;
+        top: 15px;
+        bottom: auto;
+    }
+
     
 
 }
@@ -180,6 +208,16 @@ p {
         right:150px;
         left: 0px; 
     };
+    dot-circle {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        left:auto;
+        right:40px;
+        top: 15px;
+        bottom: auto;
+    }
+
 
 }
 
@@ -190,6 +228,16 @@ p {
         right:0px;
         left:100px; 
     };
+    
+    .dot-circle {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        left:auto;
+        right: 5px;
+        top: 15px;
+        bottom: auto;
+    }
 
 
 }
@@ -201,5 +249,15 @@ p {
         right:0px;
         left:150px; 
     };
+    dot-circle {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        left:auto;
+        right: 5px;
+        top: 15px;
+        bottom: auto;
+    }
+
 
 }
