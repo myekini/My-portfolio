@@ -13,8 +13,9 @@ function ChangeTheme(mode) {
         document.getElementById('style-link').href = 'static/css/white.css';
     } else if (mode == 'grey'){
         document.getElementById('style-link').href = 'static/css/grey.css';
-    } else if (mode == 'dark'){
-        document.getElementById('style-link').href = 'static/css.black.css';
+    }
+    if (mode == 'dark'){
+        document.getElementById('style-link').href = 'static/css/black.css';
     }
 }
 

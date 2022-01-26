@@ -11,7 +11,7 @@
 
 
 body {
-    background-color: var(--tetiaryColor);
+    background-color: var(--secondaryColor);
     font-family:'Playfair Display', serif;
 }
 
@@ -27,9 +27,31 @@ p {
     font-family:'Merriweather', serif;
 }
 
+
+/* navigation theme */
+.navbar-light {
+    background: white;
+}
+
+/* section themes */
+.card {
+    background:var(--primaryColor);
+    color:var(--tetiaryColor);
+    border: 1px solid var(--tetiaryColor)
+}
+.card-footer {
+    color: var(--PrimaryText)
+}
+.card-link {
+    background: var(--primaryColor);
+}
+
+.list-group-item {
+    background: var(--primaryColor)
+}
+
 #About_me {
     border: solid 2px var(--PrimaryText);
-
 }
 
 .logo_name {
@@ -86,10 +108,10 @@ p {
 .wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
-    left: auto;
-    right: 110px;
-    top: 10px;
+    position:relative;
+    left:auto;
+    right:80px;
+    top: 15px;
     bottom: auto;
 
 }
@@ -110,7 +132,7 @@ p {
 }
 
 .dot:hover {
-    border-width: 5px;
+    border-width: 6px;
 }
 
 #light-theme {

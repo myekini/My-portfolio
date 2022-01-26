@@ -27,15 +27,30 @@ p {
 
 /* section themes */
 .card {
-    background: var(--tetiaryColor);
-    color: var(--PrimaryText);
-    border: 1px solid var(--PrimaryText)
+    background: var(--secondaryColor);
+    color: var(--tetiaryColor);
+    border: 1px solid var(--tetiaryColor)
 }
 .card-footer {
     color: var(--PrimaryText)
 }
 .card-link {
-    background: var(--PrimaryText);
+    background: var(--primaryColor);
+    
+}
+.list-group-item {
+    background:var(--primaryColor)
+}
+.card-footer {
+    color: var(--tetiaryColor)
+}
+
+.button-1 {
+    background: var(--primaryColor)
+}
+
+.icon-1 {
+    background:var(--primaryColor)
 }
 
 
@@ -95,17 +110,17 @@ p {
 }
 
 /* dot section */
-
 .wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
-    left: auto;
-    right: 110px;
-    top: 10px;
+    position:relative;
+    left:auto;
+    right:80px;
+    top: 15px;
     bottom: auto;
 
 }
+
 
 .dot {
     height:30px;

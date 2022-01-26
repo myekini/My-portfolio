@@ -5,38 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <!--  Bootstrap files  -->
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static '/js/bootstrap.js'%}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">        
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=Merriweather:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title> About me </title>
+
 </head>
 <body>
     {% include 'portfolio_app/base.html' %}
-    {% block content %}
-    <div class="container  mt-3">
-        <div class="row">
-            <div class="col mt-5">
-                <h2> Hi <span> <img src="{% static '/images/icons8-hand-black.png'%}"></span> I'm Muhammad Yekini </h2>
-                <p>Python Developer </p>
-                <p>Experienced Freelance Web Developer with a demonstrated history of working in the internet industry. Skilled in Cascading Style Sheets (CSS), AngularJS, HTML5, Python (Programming Language), and jQuery. Strong engineering professional with a Bachelor of Technology
-                    - BTech focused in Mathematics and Computer Science from the Federal University of Technology Minna.</p>
-
+        {% block content %}
+        <section class="about_me_1">
+            <div class="container  mt-3">
                 <div class="row">
-                    <div class="col">
-                       <a class="btn btn-outline-dark"><img src="{% static '/images/icons8-email-64 -black.png'%}" alt="image icon"></a> 
+                    <!-- About myself -->
+                    <div class="col mt-5">
+                        <h2> Hi <span> <img src="{% static '/images/icons8-hand-black.png'%}"></span> I'm Muhammad Yekini </h2>
+                        <p>Python Developer </p>
+                        <p>Experienced Freelance Web Developer with a demonstrated history of working in the internet industry. Skilled in Cascading Style Sheets (CSS), AngularJS, HTML5, Python (Programming Language), and jQuery. Strong engineering professional with a Bachelor of Technology
+                        - BTech focused in Mathematics and Computer Science from the Federal University of Technology Minna.</p>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn btn-outline-dark" href = "mailto:myekini1@gmail.com"><img src="{% static '/images/icons8-email-64 -black.png'%}" alt="image icon"></a> 
+                            </div>     
+                        </div>
                     </div>
-
+                    <!-- Display picture -->
+                    <div class="col mt-5  justify-content-end">
+                        <img src="{% static 'images/display picture.jpg'%}" alt="my picture" class=" img-responsive rounded-circle img-fluid" width="300" height="300" id="about_me">
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="about_me_2">
+            <!-- Footer -->
+            <footer class="page-footer font-small grey darken-3">
+                <!-- Footer Elements -->
+                <div class="container mt-5">
+                    <!-- Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-12 py-5">
+                            <div class=" flex-center">
+                                <!-- Facebook -->
+                                <a class="fb-ic" href="https://www.facebook.com/muhammad.yekini/">
+                                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                                <!-- Twitter -->
+                                <a class="tw-ic" href="https://twitter.com/MYekini">
+                                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                    
+                                <!--Linkedin -->
+                                <a class="li-ic" href="https://www.linkedin.com/in/muhammad-yekini-90ba8bab/">
+                                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                                <!--Instagram-->
+                                <a class="ins-ic" href="https://www.instagram.com/hedigitals/">
+                                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
 
-            <div class="col mt-5  justify-content-end">
-                <img src="{% static 'images/display picture.jpg'%}" alt="my picture" class=" img-responsive rounded-circle img-fluid" width="300" height="300" id="about_me">
+                </div>
 
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    {% endblock content %}
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Copyright
+                </div>
+            </footer>
+  
+        </section>  
+    {% endblock content %}   
 </body>
 </html>

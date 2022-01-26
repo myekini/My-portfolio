@@ -38,7 +38,6 @@ p {
 
 
 
-
 #About_me {
     border: solid 2px var(--PrimaryText);
 
@@ -94,17 +93,17 @@ p {
 }
 
 /* dot section */
-
 .wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
-    left: auto;
-    right: 110px;
-    top: 10px;
+    position:relative;
+    left:auto;
+    right:80px;
+    top: 15px;
     bottom: auto;
 
 }
+
 
 .dot {
     height:30px;
