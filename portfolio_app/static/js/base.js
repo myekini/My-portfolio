@@ -1,4 +1,14 @@
 
+/* theme storage settings */
+let theme = localStorage.getItem('theme')
+
+if(theme == null){
+    ChangeTheme('light')  
+} else {
+    ChangeTheme(theme)
+}
+
+
 let element = document.getElementsByClassName('dot')
 for(var i=0; element.length > i; i++) {
     element[i].addEventListener('click', function() {
@@ -7,6 +17,8 @@ for(var i=0; element.length > i; i++) {
         ChangeTheme(mode)
     })
 }
+
+
 
 function ChangeTheme(mode) {
     if(mode == 'light') {
@@ -17,5 +29,7 @@ function ChangeTheme(mode) {
     if (mode == 'dark'){
         document.getElementById('style-link').href = 'static/css/black.css';
     }
+
+    localStorage.setItem('theme', mode)
 }
 

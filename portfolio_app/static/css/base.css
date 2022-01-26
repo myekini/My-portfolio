@@ -15,6 +15,10 @@ body {
     font-family:'Playfair Display', serif;
 }
 
+body * {
+    transition:1s;
+}
+
 html {
     background-color: var(--tetiaryColor)
 }
