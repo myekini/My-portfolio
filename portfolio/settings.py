@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-whvrpsr@&%fyjqgev%)7w=t+$#zk&l8$e5a*#2jm7m6^imaf-z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yekini-portfolio.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -127,6 +128,8 @@ STATICFILES_DIRS = [
 STATIC_ROOT = BASE_DIR/ "portfolio_app/static_cdn/"
 MEDIA_ROOT = BASE_DIR/ "portfolio_app/media_cdn/"
 
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
