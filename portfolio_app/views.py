@@ -14,7 +14,7 @@ def index(request):
 
 
 
-def About_me(request):
+def about_me(request):
     """ About me page """
     return render(request, 'portfolio_app/About_me.html')
 

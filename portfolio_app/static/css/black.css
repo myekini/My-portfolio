@@ -170,6 +170,7 @@ p {
         right: 100px;;
         left: 0px; 
     }
+
     .dot-circle {
         display: flex;
         justify-content: center;
@@ -180,8 +181,6 @@ p {
         bottom: auto;
     }
     
-    
-
 }
 
 @media (min-width: 576px) {
@@ -199,7 +198,6 @@ p {
         top: 15px;
         bottom: auto;
     }
-
     
 
 }
@@ -211,13 +209,14 @@ p {
         position: relative;
         right:150px;
         left: 0px; 
-    };
+    }
+
     .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right:40px;
+        right:60px;
         top: 15px;
         bottom: auto;
     }
@@ -230,20 +229,16 @@ p {
         position: relative;
         right:0px;
         left:100px; 
-    };
-
-
+    }
     .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right: 5px;
+        right:10px;
         top: 15px;
         bottom: auto;
     }
-
-
 
 }
 
@@ -253,16 +248,15 @@ p {
         position: relative;
         right:0px;
         left:150px; 
-    };
-    dot-circle {
+    }
+    .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right: 5px;
+        right:80px;
         top: 15px;
         bottom: auto;
     }
-
 
 }

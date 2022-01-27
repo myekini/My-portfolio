@@ -19,18 +19,7 @@ body * {
     transition:1s;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-}
 
-html {
-    background-color:#ffffff;
-  }
-
-html {
-    background-color: var(--tetiaryColor)
-}
 h1,h2,h5,h6,span {
     font-family: 'Bitter', serif;
     font-weight: bold;
@@ -116,7 +105,7 @@ p {
     overflow: auto;
 }
 
-/* dot section 
+/* dot section */
 
 .dot-circle {
     display: flex;
@@ -126,8 +115,7 @@ p {
     right:80px;
     top: 15px;
     bottom: auto;
-
-} */
+}
 
 .dot {
     height:30px;
@@ -158,8 +146,6 @@ p {
     background-color:var(--tetiaryColor)
 }
 
-
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     #dp_1 {
@@ -167,6 +153,7 @@ p {
         right: 100px;;
         left: 0px; 
     }
+
     .dot-circle {
         display: flex;
         justify-content: center;
@@ -177,7 +164,6 @@ p {
         bottom: auto;
     }
     
-
 }
 
 @media (min-width: 576px) {
@@ -195,7 +181,6 @@ p {
         top: 15px;
         bottom: auto;
     }
-
     
 
 }
@@ -207,17 +192,17 @@ p {
         position: relative;
         right:150px;
         left: 0px; 
-    };
-    dot-circle {
+    }
+
+    .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right:40px;
+        right:60px;
         top: 15px;
         bottom: auto;
     }
-
 
 }
 
@@ -227,18 +212,16 @@ p {
         position: relative;
         right:0px;
         left:100px; 
-    };
-    
+    }
     .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right: 5px;
+        right:10px;
         top: 15px;
         bottom: auto;
     }
-
 
 }
 
@@ -248,16 +231,15 @@ p {
         position: relative;
         right:0px;
         left:150px; 
-    };
-    dot-circle {
+    }
+    .dot-circle {
         display: flex;
         justify-content: center;
         position:relative;
         left:auto;
-        right: 5px;
+        right:80px;
         top: 15px;
         bottom: auto;
     }
-
 
 }
