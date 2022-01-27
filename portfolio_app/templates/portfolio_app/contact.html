@@ -40,44 +40,7 @@
 </head>
 <body>
     {% block content %}
-    <!--Navigation bar --> 
-    <nav class = "navbar navbar-expand-lg navbar-light bg-light">
-        <div class ="container-fluid">
-            <a class="navbar-brand" href="{% url 'portfolio_app:index'%}">
-                <img src="{% static '/images/he_logo.png' %}" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
-                <span class="logo_name"> Hedigitals </span></a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="https://goo.gl/maps/UPwsXfEBP5Beax5N9" class=""><img src="https://img.icons8.com/material-outlined/50/000000/marker.png" width="40" height="40"/></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="" href="https://twitter.com/MYekini"> <img src="{% static '/images/icons8-twitter-100.png'%}" alt="twitter" width="40" height="40" class="rounded-circle bg-light"/></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/muhammad-yekini-90ba8bab/" class=""><img src="{% static '/images/icons8-linkedin-100-2.png'%}" alt="linkedin"  width="40" height="40" class="rounded-circle bg-light"/></a> 
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="https://github.com/myekini"><img src="{% static '/images/icons8-github-100.png'%}" alt="github"  width="40" height="40" class="rounded-circle bg-light"/></a> 
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="https://stackoverflow.com/users/15603225/myekini" class=""><img src="{% static '/images/icons8-stack-overflow-100-2.png'%}" alt="stack-overflow"  width="40" height="40" class="rounded-circle bg-light"/></a>
-                    </li>
-                </ul> 
-
-            </div>
-        </div>
-    </nav>
-    
+    {% include "portfolio_app/base.html" %}
     <!-- Contact form and Map -->
     <section class=" p-4">
         <div class="container">
@@ -156,7 +119,7 @@
                     <div class="col-md-12 py-5">
                         <div class="mb-2 flex-center">
                             <!-- Facebook -->
-                            <a class="fb-ic" href="https://www.facebook.com/muhammad.yekini/">
+                            <a class="fb-ic" href="https://www.facebook.com/he.digitals/">
                                 <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
                             <!-- Twitter -->
@@ -171,6 +134,13 @@
                             <a class="ins-ic" href="https://www.instagram.com/hedigitals/">
                               <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                             </a>
+                            <!-- Github -->
+                            <a class="git-ic" href="https://github.com/myekini">
+                                <i class="fab fa-lg fa-github white-text mr-md-5 mr-3 fa-2x"></i></a>
+                                
+                            <a class="so-ic mr-3" href="https://stackoverflow.com/users/15603225/myekini">
+                                <i class="fab fa-lg fa-stack-overflow white-text mr-md-5 mr-3 fa-2x"></i></a>
+    
                         </div>
                     </div>
                     <!-- Grid column -->
