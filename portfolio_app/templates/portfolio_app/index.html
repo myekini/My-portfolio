@@ -7,9 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/"> 
 
-    <!--  Bootstrap files  -->
+    <!--  Bootstrap files 
     <link rel="stylesheet" href="{% static '/css/bootstrap.css'%}">
-    <link rel="stylesheet" href="{% static '/js/bootstrap.js'%}">
+    <link rel="stylesheet" href="{% static '/js/bootstrap.js'%}"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">    
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
 
     <!-- custom Css -->
     <link  id="style-link" href="static/css/base.css" rel="stylesheet" type="text/css">
@@ -114,50 +133,39 @@
 
             
        <!-- Third Section (Proficiency level)-->
-       <section class="wrapper-2">
+        <section class="wrapper-2">
            <div class="container-3 p-4 mt-5">
                 <h1 class="display-2"> Proficiency Level </h1>
                 <div class="row">
                    <div class="col mt-3">
                        <h3> HTML5 </h3>
-                       <div class="progress">
-                           <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" w-100 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> 100%</div>
-                        </div>
-                        
-                        <h3> CSS3 </h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                        </div>
-                      
-                        <h3> JavaScript </h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"> 75%</div>
-                        </div>
-                    
-                        <h3> Bootstrap</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> 50%</div>
-                        </div>
-                        
-                        <h3> AngularJS</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                        
-                        <h3> jQuery</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-
-                        <h3> Python </h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> 100% </div>
-                        </div>
-                        
-                        <h3> Django </h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> CSS3 </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> JavaScript </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> Bootstrap </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> jquery </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> Python </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <h3> Django </h3>
+                       <div class="progress progress-bar-striped progress-bar-animated">
+                           <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -239,169 +247,152 @@
             </div>
         </section>
         
-        
-         
+             
         <!-- Sixth Section (Projects) -->
         <section class="wrapper-5">
-            <div class="container-6 p-4 mt-5 ">
+            <div class="container-6 p-4 mt-5">
                 <h1 class="display-2"> Projects </h1>
                 <div class="row">
                     <div class="col mt-2">
+                        <div class="card-deck">
+                            
+                            <!-- 1st project-->
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tech Blog</h5>
+                                    <p class="card-text"> A software development blog for insights in the tech industry and programming language tutorials</p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="" class=" card-link btn btn-light"> Demo </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid git-logo" alt="github" width="50" height="40" border="0"/></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="badge rounded-pill bg-dark">HTML5</span>
+                                    <span class="badge rounded-pill bg-dark">CSS3</span>
+                                    <span class="badge rounded-pill bg-dark">JavaScript</span>
+                                    <span class="badge rounded-pill bg-dark">Bootstrap5</span>
+                                    <span class="badge rounded-pill bg-dark">Python(Django)</span>
+                                </div>
+                            </div>
+                    
+                            <!-- 2nd project-->
+                            <div class="card mb-3" >
+                                <div class="card-body">
+                                  <h5 class="card-title"> Portfolio Website </h5>
+                                  <p class="card-text"> highlights my resumes, skills i'm proficient in , my education and experience as well as Projects i've worked on</p>
+                                  <div class="row">
+                                    <div class="col">
+                                        <!-- Github -->
+                                        <a class="btn btn-primary btn-floating m-1"
+                                        style="background-color: #333333;"
+                                        href="#!"
+                                        role="button">
+                                        <i class="fab fa-github"></i>
+                                        </a>
+                                        
+                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website" >
+                                            <i class="fab fa-lg fa-github black-text mr-md-5 mr-3 fa-2x"></i>
+                                        </a> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer ">
+                                    <span class="badge rounded-pill bg-dark">HTML5</span>
+                                    <span class="badge rounded-pill bg-dark">CSS3</span>
+                                    <span class="badge rounded-pill bg-dark">JavaScript</span>
+                                    <span class="badge rounded-pill bg-dark">Bootstrap5</span>
+                                    <span class="badge rounded-pill bg-dark">Python(Django)</span>
+                                </div>
+                            </div>
 
-                        <!-- 1st project-->
-                        <div class="card mb-3 " style="max-width: 18rem;">
-                            <!--<div class="card-header">Header</div> -->
-                            <div class="card-body">
-                              <h5 class="card-title">Tech Blog</h5>
-                              <p class="card-text"> A software development blog for insights in the tech industry and programming language tutorials</p>
-                              <div class="row">
-                                  <div class="col-6">
-                                      <a href="" class=" card-link btn btn-light"> Demo </a>
-                                  </div>
-                                  <div class="col-6">
-                                      <a href="#" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid git-logo" alt="github" width="50" height="40" border="0"/></a> 
-                                  </div>
-    
-                              </div>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="row">
-                                    <div class="col"> HTML</div>
-                                    <div class="col"> css3</div>
-                                    <div class="col"> Bootstrap</div>
-                                    <div class="col"> Javascript</div>
-                                    <div class="col"> Python (Django)</div>
+                            <!-- 3rd project-->
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Space shooter </h5>
+                                    <p class="card-text"> 3D space alien invasion game</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="#" class=" card-link btn btn-light"> Demo</a></div>
+                                        <div class="col">
+                                            <a href="#" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                          </div>
-                    </div>
-                    
-                    <!-- 2nd project-->
-                    <div class="col mt-2">
-                        <div class="card mb-3" style="max-width: 18rem;">
-                            <!--<div class="card-header">Header</div> -->
-                            <div class="card-body">
-                              <h5 class="card-title"> Portfolio Website </h5>
-                              <p class="card-text"> highlights my resumes, skills i'm proficient in , my education and experience as well as Projects i've worked on</p>
-                              <div class="row">
-                                <div class="col">
-                                    <a href="#" class="card-link btn btn-light"> Demo</a>
-                                </div> 
-                                <div class="col">
-                                   <a href="https://github.com/myekini/portfolio-website" class="card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid" alt="github" width="50" height="40" border="0"/></a> 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="row">
-                                    <div class="col"> HTML</div>
-                                    <div class="col"> css3</div>
-                                    <div class="col"> Bootstrap</div>
-                                    <div class="col"> Javascript</div>
-                                    <div class="col"> Python(Django)</div>
+                                <div class="card-footer">
+                                    <span class="badge rounded-pill bg-dark">Python</span>
+                                    <span class="badge rounded-pill bg-dark">Pygame</span>
                                 </div>
                             </div>
                         </div>
-                    </div>  
-                    
-                    <!-- 3rd project-->
-                    <div class="col mt-2">
-                        <div class="card mb-3" style="max-width: 18rem;">
-                          <!-- <div class="card-header">Header</div>  -->
-                            <div class="card-body">
-                              <h5 class="card-title"> Space shooter </h5>
-                              <p class="card-text"> 3D space alien invasion game</p>
-                              <div class="row">
-                                <div class="col">
-                                    <a href="#" class=" card-link btn btn-light"> Demo</a></div>
-                                <div class="col">
-                                   <a href="#" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="row">
-                                    <div class="col"> Python </div>
-                                    <div class="col"> Pygame </div>
-    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="card-deck">
 
-                    <!-- 4th project-->
-                    <div class="col mt-2">
-                        <div class="card mb-3 " style="max-width: 18rem;">
-                           <!-- <div class="card-header">Header</div> -->
-                            <div class="card-body">
-                              <h5 class="card-title">Email Validation</h5>
-                              <p class="card-text"> Responsive image validation layout</p>
-                              <div class="row">
-                                  <div class="col"><a href="#" class="card-link btn btn-light"> Demo</a></div>
-                                  <div class="col">
-                                   <a href="https://github.com/myekini/JS-Email-Validation" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid" alt="github" width="50" height="40" border="0"/></a> 
-                                  </div>
-                              </div>
-                            </div>
-    
-                            <div class="card-footer">
-                                <div class="row">
-                                    <div class="col"> HTML</div>
-                                    <div class="col"> css3</div>
-                                    <div class="col"> Javascript</div>
+                            <!-- 4th project-->
+                            <div class="card mb-3 ">
+                                <div class="card-body">
+                                    <h5 class="card-title">Email Validation</h5>
+                                    <p class="card-text">Responsive image validation layout</p>
+                                    <div class="row">
+                                        <div class="col"><a href="#" class="card-link btn btn-light"> Demo</a></div>
+                                        <div class="col">
+                                            <a href="https://github.com/myekini/JS-Email-Validation" class=" card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid" alt="github" width="50" height="40" border="0"/></a> 
+                                        </div>
+                                    </div>
+                                </div>         
+                                <div class="card-footer">
+                                    <span class="badge rounded-pill bg-dark">HTML5</span>
+                                    <span class="badge rounded-pill bg-dark">CSS3</span>
+                                    <span class="badge rounded-pill bg-dark">JavaScript</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 5th project-->
-                    <div class="col mt-2">
-                        <div class="card mb-3 dark-theme" style="max-width: 18rem;">
-                          <!--<div class="card-header">Header</div> -->
-                            <div class="card-body">
-                              <h5 class="card-title"> World population</h5>
-                              <p class="card-text"> Data visualization of populations around the world</p>
-                              <div class="row">
-                                <div class="col"><a href="#" class=" card-link btn btn-light"> Demo</a></div>
-                                <div class="col">
-                                   <a href="#" class="card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
+
+                            <!-- 5th project-->
+                            <div class="card mb-3 dark-theme">
+                                <!--<div class="card-header">Header</div> -->
+                                <div class="card-body">
+                                    <h5 class="card-title"> World population</h5>
+                                    <p class="card-text"> Data visualization of populations around the world</p>
+                                    <div class="row">
+                                        <div class="col"><a href="#" class=" card-link btn btn-light"> Demo</a></div>
+                                        <div class="col">
+                                            <a href="#" class="card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row">
-                                    <div class="col"> Python</div>
-                                    <div class="col"> Request </div>
+                                <div class="card-footer">
+                                    <span class="badge rounded-pill bg-dark">Python</span>
+                                    <span class="badge rounded-pill bg-dark">Request</span>
+                                    <span class="badge rounded-pill bg-dark">Matplotlib</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 6th project-->
-                    <div class="col mt-2">
-                        <div class="card mb-3 dark-theme" style="max-width: 18rem;">
-                          <!--<div class="card-header">Header</div> -->
-                            <div class="card-body">
-                              <h5 class="card-title"> Text Analyzer</h5>
-                              <p class="card-text"> performs text analysis on txt file and results the word counts, re-occurance of words, word frequency. etc</p>
-                              <div class="row">
-                                <div class="col"><a href="#" class=" card-link btn btn-light"> Demo</a></div>
-                                <div class="col">
-                                   <a href="https://github.com/myekini/Text-Analyzer" class="card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
+
+                            <!-- 6th project-->
+                            <div class="card mb-3 dark-theme">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Text Analyzer</h5>
+                                    <p class="card-text"> performs text analysis on txt file and results the word counts, re-occurance of words, word frequency. etc</p>
+                                    <div class="row">
+                                        <div class="col"><a href="#" class=" card-link btn btn-light"> Demo</a></div>
+                                        <div class="col">
+                                            <a href="https://github.com/myekini/Text-Analyzer" class="card-link btn btn-light"><img src="{% static '/images/icons8-github-100.png'%}" class="img-responsive img-fluid rounded-circle" alt="github" width="50" height="40" border="0"/></a> 
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                            </div>
-                            <div class="card-footer ">
-                                <div class="row">
-                                    <div class="col"> Python</div>
-                                    <div class="col"> Request </div>
+                                <div class="card-footer">
+                                    <span class="badge rounded-pill bg-dark">Python</span>
+                                    <span class="badge rounded-pill bg-dark">Tkinter</span>
+                                    <span class="badge rounded-pill bg-dark">Pandas</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>    
                     </div>
                 </div>
             </div>
         </section>
+          
         
         <!-- Seventh section (contact me) -->
         <section class="wrapper-6">
@@ -443,7 +434,7 @@
                 </div>
             </div>
         </section>
-        
+    
     </div>
     
     <script src="{% static '/js/base.js' %}"></script>
