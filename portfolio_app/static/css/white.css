@@ -41,9 +41,9 @@ p {
     color: var(--secondaryText)
 }
 
-.card-link {
-    background-color: var(--primaryColor);
-    color: var(--secondaryText)
+.badge {
+    background-color:var(--primaryColor);
+    color:var(--secondaryText)
 }
 
 

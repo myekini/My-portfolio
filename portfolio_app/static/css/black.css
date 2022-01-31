@@ -28,8 +28,6 @@ p {
     color:var(--PrimaryText);
 }
 
-
-
 /* navigation theme */
 .navbar-light {
     background: var(--tetiaryColor);
@@ -45,13 +43,11 @@ p {
     color: var(--PrimaryText)
 }
 
-.card-link {
-    background: var(--PrimaryText);
-    color: var(--primaryColor);
-}
 
 .list-group-item {
-    color: var(--primaryColor)
+    background-color: var(--tetiaryColor);
+    color: var(--PrimaryText);
+    border: 1px solid whitesmoke;
 }
 
 .card-text {

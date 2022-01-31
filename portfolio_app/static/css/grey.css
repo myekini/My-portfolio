@@ -36,16 +36,15 @@ p {
     color: var(--tetiaryColor);
     border: 1px solid var(--tetiaryColor)
 }
+
 .card-footer {
     color: var(--PrimaryText)
 }
-.card-link {
-    background: var(--primaryColor);
-    color: var(--tetiaryColor);
-    
-}
+
+
 .list-group-item {
-    background:var(--primaryColor)
+    background:var(--primaryColor);
+    color:var(--secondaryText);
 }
 .card-footer {
     color: var(--tetiaryColor)
