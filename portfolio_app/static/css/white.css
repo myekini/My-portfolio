@@ -41,6 +41,11 @@ p {
     color: var(--secondaryText)
 }
 
+.card-link {
+    background-color: var(--primaryColor);
+    color: var(--secondaryText)
+}
+
 
 
 #About_me {
@@ -58,6 +63,14 @@ p {
     position: relative;
     right:0;
    
+}
+/* social media icons */
+.fab {
+    color: black;
+}
+
+.fa {
+    color: black;
 }
 
 

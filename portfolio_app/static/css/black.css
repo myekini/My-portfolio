@@ -17,12 +17,7 @@ body {
 }
 
 
-.container {
-    width: 100%;
-    height: 100%;
-}
-
-h1,h2,h4,h5,h6,span {
+h1,h2,h3,h4,h5,h6,span {
     font-family: 'Bitter', serif;
     font-weight: bold;
     color:var(--PrimaryText);
@@ -32,6 +27,7 @@ p {
     font-family:'Merriweather', serif;
     color:var(--PrimaryText);
 }
+
 
 
 /* navigation theme */
@@ -48,8 +44,18 @@ p {
 .card-footer {
     color: var(--PrimaryText)
 }
+
 .card-link {
     background: var(--PrimaryText);
+    color: var(--primaryColor);
+}
+
+.list-group-item {
+    color: var(--primaryColor)
+}
+
+.card-text {
+    color: var(--PrimaryText)
 }
 
 .git-logo {
@@ -76,6 +82,14 @@ p {
     position: relative;
     right:0;
     left: 150px;
+}
+
+/* social media icons */
+.fab {
+    color: white;
+}
+.fa {
+    color: white;
 }
 
 /* section styling */
