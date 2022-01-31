@@ -24,33 +24,32 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=Merriweather:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
-
     
     <!-- custom Css -->
     <link  id="style-link" href="static/css/base.css" rel="stylesheet" type="text/css">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,700;1,400&family=Merriweather:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title> Portfolio</title>
 </head>
 
 <body>
     {% block content %}
     <div class = "container-fluid">
-        <!--Navigation bar --> 
-        <nav class = "navbar navbar-expand-lg navbar-light">
+         <!--Navigation bar --> 
+         <nav class = "navbar navbar-expand-lg navbar-light ">
             <div class ="container-fluid">
-                <a class="navbar-brand" href="#">
-                <img src="{% static '/images/he_logo.png' %}" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
-                <span class="logo_name nav-text"> Hedigitals </span></a>
+                <a class="navbar-brand" href="{% url 'portfolio_app:index'%}">
+                    <img src="{% static '/images/he_logo.png' %}" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
+                    <span class="logo_name nav-text"> Hedigitals </span></a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="{% url 'portfolio_app:index'%}"><p class="nav-text">Home</p></a>
@@ -75,9 +74,7 @@
                 </div>
             </div>
         </nav>
-            
-    
-            
+              
         <!-- First page section (title & description) -->
         <section class="wrapper-1">
             <div class="container-fluid p-5 mt-5">
@@ -178,7 +175,7 @@
                             <div class="card-header">
                                 <h4 class="card-title"> Federal University of Technology Minna</h4>
                                 <h6 class="subtitle"> B.TECH Mathematics and Statistics</h6>
-                                <a class="badge badge-default"> 2014 - 2019 </a>
+                                <a class="badge badge-dark"> 2014 - 2019 </a>
                             </div>
                             <div class="card-body">
                                 <p> Participated in projects </p>
@@ -200,34 +197,33 @@
                 <div class="row mt-3">
                     <!-- 1st card -->
                     <div class="col">
-                        <div class="card h-100" style="max-width:30rem;">
-                            <div class="card-header">
-                                <h5 class="card-title"> Fiverr. Part-time</h5>
+                        <div class="card-deck">
+                            <div class="card" style="max-width:40rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title"> Fiverr. Part-time</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2"> Freelance Web Developer</h5>
+                                    <a class="badge badge-dark"> Jan 2020 - Present . 2yrs 1 mo</a>
+                                    <p> Planned website development, converting mockups into usable web Applications with HTML, CSS, JavaScript(Angular), Python and Django.
+                                        Provided front-end website development using HTML/CSS, Bootstrap and other frameworks
+                                        Multi-tasked across multiple functions and roles to generate project results and meet deadlines and organizational expectations.</p>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-subtitle mb-2"> Freelance Web Developer</h5>
-                                <a class="badge"> Jan 2020 - Present . 2yrs 1 mo</a>
-                                <p> Planned website development, converting mockups into usable web Applications with HTML, CSS, JavaScript(Angular), Python and Django.
-                                    Provided front-end website development using HTML/CSS, Bootstrap and other frameworks
-                                    Multi-tasked across multiple functions and roles to generate project results and meet deadlines and organizational expectations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 2nd card -->
-                    <div class="col">
-                        <div class="card h-100" style="max-width:30rem;">
-                            <div class="card-header">
-                                <h5 class="card-title "> Nigerian National Petroleum Corporation- Internship </h5>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-subtitle mb-2">Data Entry Assistant (Planning & Budget Monitoring Department)</h5>
-                                <a class="badge badge-default"> Oct 2018 - Dec 2018 . 3mos</a>
-                                <p>Preparing and sorting documents for data entry
-                                    Entering data into database software and checking to ensure the accuracy of the data
-                                    Resolving discrepancies in information and obtaining further information for incomplete documents
-                                    Creating data backups as part of a contingency plan
-                                    Responding to information requests from authorised members</p>
+
+                            <div class="card" style="max-width:40rem;">
+                                <div class="card-header">
+                                    <h5 class="card-title "> Nigerian National Petroleum Corporation- Internship </h5>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2">Data Entry Assistant (Planning & Budget Monitoring Department)</h5>
+                                    <a class="badge badge-dark"> Oct 2018 - Dec 2018 . 3mos</a>
+                                    <p>Preparing and sorting documents for data entry
+                                        Entering data into database software and checking to ensure the accuracy of the data
+                                        Resolving discrepancies in information and obtaining further information for incomplete documents
+                                        Creating data backups as part of a contingency plan
+                                        Responding to information requests from authorised members</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -250,10 +246,10 @@
                                     <h5 class="card-title">Tech Blog</h5>
                                     <p> A software development blog for insights in the tech industry and programming language tutorials</p>
                                     <div class="row">
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg  fa-2x mr-md-5 mr-3 ml-2"></i>
                                           </a>
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="https://github.com/myekini/Tech-Blog.git">
                                             <i class="fab fa-github fa-lg  fa-2x mr-md-5 mr-3"></i>
                                         </a>
                                     </div>
@@ -273,7 +269,7 @@
                                   <h5 class="card-title"> Portfolio Website </h5>
                                   <p class=""> highlights my resumes, skills i'm proficient in , my education and experience as well as Projects i've worked on</p>
                                   <div class="row">
-                                      <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                      <a class="git-ic" href="#">
                                         <i class="fa fa-laptop fa-lg  fa-2x mr-md-5 mr-3 ml-2" ></i>
                                       </a>
                                       <a class="git-ic" href="https://github.com/myekini/portfolio-website">
@@ -296,10 +292,10 @@
                                     <h5 class="card-title"> Space shooter </h5>
                                     <p class=""> 3D space alien invasion game</p>
                                     <div class="row">
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg  fa-2x mr-md-5 mr-3 ml-2" ></i>
                                           </a>
-                                          <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                          <a class="git-ic" href="https://github.com/myekini/Alien-Invasion.git">
                                             <i class="fab fa-lg fa-github fa-2x mr-md-5 mr-3"></i>
                                           </a>
                                     </div>
@@ -318,10 +314,10 @@
                                     <h5 class="card-title">Email Validation</h5>
                                     <p class="">Responsive image validation layout</p>
                                     <div class="row">
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg  fa-2x mr-md-5 mr-3 ml-2"></i>
                                           </a>
-                                          <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                          <a class="git-ic" href="https://github.com/myekini/JS-Email-Validation.git">
                                             <i class="fab fa-lg fa-github  fa-2x mr-md-5 mr-3"></i>
                                           </a>
                                     </div>
@@ -340,10 +336,10 @@
                                     <h5 class="card-title"> World population</h5>
                                     <p class=""> Data visualization of populations around the world</p>
                                     <div class="row">
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg  fa-2x mr-md-5 mr-3 ml-2"></i>
                                           </a>
-                                          <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                          <a class="git-ic" href="https://github.com/myekini/Data-visualization.git">
                                             <i class="fab fa-lg fa-github  fa-2x mr-md-5 mr-3"></i>
                                           </a>
                                     </div>
@@ -361,10 +357,10 @@
                                     <h5 class="card-title"> Text Analyzer</h5>
                                     <p class=""> performs text analysis on txt file and results the word counts, re-occurance of words, word frequency. etc</p>
                                     <div class="row">
-                                        <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                        <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg fa-2x mr-md-5 mr-3 ml-2"></i>
                                           </a>
-                                          <a class="git-ic" href="https://github.com/myekini/portfolio-website">
+                                          <a class="git-ic" href="https://github.com/myekini/Text-Analyzer.git">
                                             <i class="fab fa-lg fa-github fa-2x mr-md-5 mr-3"></i>
                                           </a>
                                     </div>
@@ -393,8 +389,9 @@
     
                         <a href="https://goo.gl/maps/UPwsXfEBP5Beax5N9" class=" button-1 btn btn-light"><img src="https://img.icons8.com/material-outlined/50/000000/marker.png" width="30" height="30"/>Lagos,Nigeria</a>
                         
-                        <div class="mt-3">
-                            <!-- Facebook -->
+                        <div class="row mt-3">
+                            <div class="col-12 col-xs-12 col-sm-12 justify-content-between">
+                                <!-- Facebook -->
                             <a class="fb-ic" href="https://www.facebook.com/he.digitals/">
                                 <i class="fab fa-facebook-f fa-lg  mr-3 fa-2x"> </i>
                             </a>
@@ -416,6 +413,8 @@
                                 
                             <a class="so-ic mr-3" href="https://stackoverflow.com/users/15603225/myekini">
                                 <i class="fab fa-lg fa-stack-overflow mr-3 fa-2x"></i></a>
+                            </div>
+                            
                         </div>
                     </div>
 

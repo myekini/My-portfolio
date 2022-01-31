@@ -45,7 +45,7 @@ p {
 
 
 .list-group-item {
-    background-color: var(--tetiaryColor);
+    background-color: var(--primaryColor);
     color: var(--PrimaryText);
     border: 1px solid whitesmoke;
 }

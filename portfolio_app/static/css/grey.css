@@ -51,7 +51,8 @@ p {
 }
 
 .button-1 {
-    background: var(--primaryColor)
+    background: var(--primaryColor);
+    color: var(--secondaryText)
 }
 
 .icon-1 {
