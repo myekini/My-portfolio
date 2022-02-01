@@ -22,8 +22,7 @@ A portfolio website to introduce to potential employers and recruiters About me,
 * DJANGO
 * SQLite
 * HEROKU
-
-## Project Demo
+* 
 ## Installation
 The project includes a requirements.txt file that contains all packages and project dependencies. use python package manager pip
 
