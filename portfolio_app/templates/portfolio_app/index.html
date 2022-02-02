@@ -91,8 +91,8 @@
                     <div class="col-md-6 col-lg-6 col-xl-5 mt-4">
                         <h5> Python (Django) developer</h5>
                         <h1 class="display-4"> Muhammad Yekini </h1>
-                        <p> Experienced Freelance Web Developer with a demonstrated history of working in the internet industry. Skilled in Cascading Style Sheets (CSS), AngularJS, HTML5, Python (Programming Language), and jQuery. Strong engineering professional with a Bachelor of Technology
-                        - BTech focused in Mathematics and Computer Science from the Federal University of Technology Minna.</p>
+                        <p>Experienced Python (Django) developer with 2+ years exploiting model-template-view, architectural pattern of Django framework for rapid development and clean, pragmatic design. Specializes in creating accessible data-driven web assets. Skilled in HTML5, Cascading Style Sheets(CSS3), Python(Programming Language), Django, and building Machine Learning models with Data Visualization. Keen to apply expansive development knowledge to deliver fast, efficient projects.
+                        </p>
                         <a href="{% static '/images/Resume.pdf'%}" class="btn btn-success rounded-pill" download><img src="{% static '/images/outline_cloud_upload_black_24dp.png'%}" class="p-1"> Resume</a>
                         <a href="{% url 'portfolio_app:contact'%}" class="btn btn-primary rounded-pill"> Contact </a>
                     </div>
@@ -354,10 +354,19 @@
 
                             <!-- 6th project-->
                             <div class="card mb-3 dark-theme">
+                                <img class="card-img-top" src="{% static '/images/text-analyzer logo small.png'%}" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title"> Text Analyzer</h5>
-                                    <p class=""> performs text analysis on txt file and results the word counts, re-occurance of words, word frequency. etc</p>
-                                    <div class="row">
+                                    <p class="">
+                                        A graphical User Interface (GUI) tool that conducts a text analysis on a .txt file thats counts:</p>
+                                        <ul>
+                                            <li>total number of words </li>
+                                            <li>total number of occurrences for each word.</li>
+                                            <li> total number of characters in the text document.</li>
+                                            <li> total number of blank spaces in the text document. </li>
+                                            <li>calculate the percentage of blank spaces.</li>
+                                        </ul>
+                                    <div class="row pt-1">
                                         <a class="git-ic" href="#">
                                             <i class="fa fa-laptop fa-lg fa-2x mr-md-5 mr-3 ml-2"></i>
                                           </a>
